@@ -6,18 +6,16 @@ for magician in magicians:
 
 # Making Numerical List
 # using the range() Function
-
 for value in range(1, 5):
     print(value)
 
 # using range() to make a list of numbers
-
 numbers = list(range(1, 6))
 print(numbers)
 
 squares = []
 for value in range(1, 11):
-    square = value**2
+    square = value ** 2
     squares.append(square)
     # squares.append(value**2)
 print(squares)
@@ -47,3 +45,18 @@ for fruit in fruits[:4]:
 copy_of_fruits = fruits[:]
 print(copy_of_fruits)
 
+# Tuples
+# Python refers to values that cannot change as immutable, and an immutable list is called a tuple.
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+# dimensions[0] = 250  # This will raise an error since tuples are immutable
+print(dimensions)
+
+# Looping through a tuple
+for dimension in dimensions:
+    print(dimension)
+
+# Writing over a tuple
+dimensions = (400, 100)
+print(dimensions)
