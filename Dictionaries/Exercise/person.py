@@ -26,3 +26,7 @@ glossary = {
     'loop': 'Repeats code.',
 }
 print("\n", glossary)
+
+for key, value in glossary.items():
+    print(key)
+    print(value)
